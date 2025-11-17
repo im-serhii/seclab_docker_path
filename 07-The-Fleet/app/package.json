@@ -1,0 +1,13 @@
+{
+  "name": "db-app",
+  "version": "1.0.0",
+  "description": "An app that connects to a database",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "pg": "^8.7.1"
+  }
+}
