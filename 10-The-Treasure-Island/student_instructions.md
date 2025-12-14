@@ -10,7 +10,7 @@ The final memo from Dr. Sharma arrives. This is the one that matters.
 > **FROM:** Dr. A. Sharma
 > **SUBJECT:** Final Assessment: Project Phoenix
 >
-> I saw the security alert. I also saw your rapid remediation. Learning from mistakes is a sign of a good engineer. 
+> I saw the security alert. I also saw your rapid remediation. Learning from mistakes is a sign of a good engineer.
 >
 > You have learned to build, to manage, to connect, to optimize, and to secure. You have helped your colleagues and strengthened your own workflow. The training is over.
 >
@@ -24,30 +24,30 @@ This is it. Your mission is to take the provided source code and, from scratch, 
 
 ## What You Will Accomplish
 
-*   Demonstrate mastery of Docker and Docker Compose.
-*   Architect a containerization strategy for a real-world, multi-tier application.
-*   Solidify your position as a technical leader at Innovatech.
+* Demonstrate mastery of Docker and Docker Compose.
+* Architect a containerization strategy for a real-world, multi-tier application.
+* Solidify your position as a technical leader at Innovatech.
 
 ## Project Phoenix: Service Requirements
 
 Dr. Sharma has laid out the specifications. You must meet them all.
 
-1.  **Orchestration:** Create a `docker-compose.yml` file in the root `10-The-Treasure-Island` directory.
+1. **Orchestration:** Create a `docker-compose.yml` file in the root `10-The-Treasure-Island` directory.
 
-2.  **Secrets Management:** Create a `.env` file in the root directory to store all passwords, users, and other configuration. This file must not contain any hardcoded secrets.
+2. **Secrets Management:** Create a `.env` file in the root directory to store all passwords, users, and other configuration. This file must not contain any hardcoded secrets.
 
-3.  **Database Service (`db`):**
+3. **Database Service (`db`):**
     *   Image: `postgres:13-alpine`
     *   Data: Must persist in a named volume called `capstone-db-data`.
     *   Configuration: All settings (user, password, db name) must be loaded from your `.env` file.
 
-4.  **Backend Service (`backend`):**
+4. **Backend Service (`backend`):**
     *   Build: Must be built from a `Dockerfile` you create in the `backend` directory.
     *   Optimization: The `Dockerfile` must use a multi-stage build to create a lean production image.
     *   Networking: Must be able to communicate with the `db` service.
     *   Configuration: Must get all database connection details from the `.env` file.
 
-5.  **Frontend Service (`frontend`):**
+5. **Frontend Service (`frontend`):**
     *   Build: Must be built from a `Dockerfile` you create in the `frontend` directory.
     *   Technology: Use an `nginx:alpine` image to serve the static `index.html` and `app.js` files.
     *   Accessibility: Must be accessible from your browser on port `80`.
@@ -56,13 +56,13 @@ Dr. Sharma has laid out the specifications. You must meet them all.
 
 This is your canvas. You know what to do.
 
-1.  Analyze the source code in the `frontend` and `backend` directories.
-2.  Architect and create the `Dockerfile` for the `backend`.
-3.  Architect and create the `Dockerfile` for the `frontend`.
-4.  Define all secrets and configurations in your `.env` file.
-5.  Construct the `docker-compose.yml` file to bring all services, networks, and volumes together.
-6.  Launch the Phoenix: `docker-compose up --build -d`.
-7.  Verify that `http://localhost` shows the frontend, and that clicking the button successfully retrieves and displays data from the database via the backend.
+1. Analyze the source code in the `frontend` and `backend` directories.
+2. Architect and create the `Dockerfile` for the `backend`.
+3. Architect and create the `Dockerfile` for the `frontend`.
+4. Define all secrets and configurations in your `.env` file.
+5. Construct the `docker-compose.yml` file to bring all services, networks, and volumes together.
+6. Launch the Phoenix: `docker-compose up --build -d`.
+7. Verify that `http://localhost` shows the frontend, and that clicking the button successfully retrieves and displays data from the database via the backend.
 
 ## Verifying Your Success
 
@@ -72,8 +72,8 @@ This is the final test. Run the verification script. It will perform a full inte
 ./verify.sh
 ```
 
-## Congratulations!
+## Congratulations
 
-As the verification script returns a success message, you see an email notification from HR and Dr. Sharma. The subject: "Promotion: Technical Lead, Project Phoenix." 
+As the verification script returns a success message, you see an email notification from HR and Dr. Sharma. The subject: "Promotion: Technical Lead, Project Phoenix."
 
 You have completed the DevOps Journey. You are no longer just a developer; you are an architect of modern applications.
